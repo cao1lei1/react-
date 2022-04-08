@@ -1,0 +1,275 @@
+@import '~antd/dist/antd.css';
+
+.Login {
+    position: relative;
+    height: 900px;
+    background: #F0F2F5;
+}
+
+.Login-name {
+    position: absolute;
+    width: 736px;
+    height: 71px;
+    left: 85px;
+    top: 85px;
+
+    font-family: 'Baloo Thambi 2';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 46px;
+    line-height: 71px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+
+    background: linear-gradient(180deg, #030303 0%, rgba(0, 0, 0, 0.49) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.Login-image {
+    position: absolute;
+    width: 769px;
+    height: 682px;
+    left: 52px;
+    top: 161px;
+}
+
+.Form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+
+    position: absolute;
+    width: 360px;
+    height: 250px;
+    left: calc(50% - 360px/2 + 350px);
+    top: calc(50% - 250px/2);
+
+    background: #F0F2F5;
+}
+
+.Tabs-top {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+
+    position: static;
+    width: 360px;
+    height: 58px;
+    left: 0px;
+    top: 0px;
+
+    /* Conditional / page-background */
+
+    background: #F0F2F5;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+    margin: 22px 0px;
+}
+
+.Items-count {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+
+    position: static;
+    width: 88px;
+    height: 46px;
+    left: 0px;
+    top: 0px;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 0px;
+}
+
+.Components {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+
+    position: static;
+    width: 28px;
+    height: 32px;
+    left: 0px;
+    top: 7px;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 32px;
+}
+
+.Tab {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 0px;
+
+    position: static;
+    width: 28px;
+    height: 32px;
+    left: 0px;
+    top: 0px;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+    margin: 0px 0px;
+}
+
+.Title {
+    position: static;
+    width: 28px;
+    height: 22px;
+    left: 0px;
+    top: 5px;
+
+    /* Body/medium */
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    /* identical to box height, or 157% */
+
+    display: flex;
+    align-items: center;
+
+    /* Primary/6 */
+
+    color: #1890FF;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 10px 0px;
+}
+
+.Ink {
+    position: static;
+    width: 28px;
+    height: 0px;
+    left: 0px;
+    top: 32px;
+
+    /* Primary/6 */
+
+    border: 2px solid #1890FF;
+    box-sizing: border-box;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+    margin: 0px 0px;
+}
+
+.Box-shadow {
+    position: static;
+    width: 360px;
+    height: 0px;
+    left: 0px;
+    top: 46px;
+}
+
+.Inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+
+    position: static;
+    width: 360px;
+    height: 108px;
+    left: 0px;
+    top: 80px;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 22px 0px;
+}
+
+.Input {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px 12px;
+
+    position: static;
+    width: 360px;
+    height: 40px;
+    left: 0px;
+    top: 68px;
+
+    /* Neutral/1 */
+
+    background: #FFFFFF;
+    /* Neutral / 5 */
+
+    border: 1px solid #D9D9D9;
+    box-sizing: border-box;
+    border-radius: 2px;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 28px 0px;
+}
+
+.Wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+
+    position: static;
+    width: 336px;
+    height: 24px;
+    left: 12px;
+    top: 8px;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+    margin: 0px 0px;
+}

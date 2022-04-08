@@ -1,0 +1,6 @@
+@import '~antd/dist/antd.css';
+
+.chart {
+    display: flex;
+    height: 400px;
+}

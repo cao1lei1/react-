@@ -1,0 +1,83 @@
+@import '~antd/dist/antd.css';
+
+.home {
+    position: relative;
+    height: 900px;
+
+    background: #FFFFFF;
+}
+
+.nav {
+    position: absolute;
+    width: 269px;
+    height: 910px;
+    left: 0px;
+    top: 0px;
+
+    background: #001629;
+    mix-blend-mode: normal;
+    border: 1px solid #001629;
+    box-sizing: border-box;
+
+}
+
+.content {
+    position: absolute;
+    width: 1208px;
+    height: 900px;
+    left: 269px;
+    top: 0px;
+}
+
+.header {
+    position: absolute;
+    width: 1208px;
+    height: 95px;
+    left: 1px;
+    top: 0px;
+
+    background: #F4F7FC;
+}
+
+.input {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+
+    position: absolute;
+    width: 414px;
+    height: 43px;
+    left: 732px;
+    top: 35px;
+
+    /* White */
+
+    background: #FFFFFF;
+    /* box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.06), 0px 0px 0px 1px rgba(104, 113, 130, 0.16); */
+    border-radius: 6px;
+}
+
+.container {
+    position: absolute;
+    width: 1208px;
+    height: 804px;
+    left: 1px;
+    top: 96px;
+}
+
+.btn_show {
+    background: #EFF5EA;
+    border: 1px solid #EFF5EA;
+    box-sizing: border-box;
+}
+
+.btn_delete {
+    background: #FCE1DF;
+    border: 1px solid #FCE1DF;
+    box-sizing: border-box;
+}
+
+.dataForm {
+    height: 400px;
+}

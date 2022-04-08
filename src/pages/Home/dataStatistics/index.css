@@ -1,0 +1,29 @@
+@import '~antd/dist/antd.css';
+
+.content {
+    position: absolute;
+    width: 1208px;
+    height: 900px;
+    left: 269px;
+    top: 0px;
+}
+
+.header {
+    display: flex;
+    position: absolute;
+    width: 1208px;
+    height: 95px;
+    left: 1px;
+    top: 0px;
+    background: #F4F7FC;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    position: absolute;
+    width: 1208px;
+    height: 804px;
+    left: 1px;
+    top: 96px;
+}
