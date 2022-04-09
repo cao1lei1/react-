@@ -1,7 +1,7 @@
 import React from "react";
 import LoginImage from "../../image/login.png";
 import "./login.css";
-import { Form, Input, Button, Menu, Alert, message } from "antd";
+import { Form, Input, Button, Menu, message } from "antd";
 import { Navigate } from "react-router-dom";
 class Login extends React.Component {
   constructor() {

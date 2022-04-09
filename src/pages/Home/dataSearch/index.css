@@ -81,5 +81,20 @@
 .dataForm {
     display: flex;
     flex-direction: column;
-    height: 400px;
+    height: 420px;
+}
+
+.image {
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 0 1 800;
+    margin-top: 50;
+    justify-content: space-around;
+    align-content: space-between;
+}
+
+.image .img {
+    width: 320px;
+    height: 200px;    
 }

@@ -2,5 +2,6 @@
 
 .chart {
     display: flex;
+    justify-content: space-between;
     height: 400px;
 }

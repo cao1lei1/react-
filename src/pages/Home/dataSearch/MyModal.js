@@ -14,17 +14,35 @@ import {
 } from "video-react";
 import "../../../../node_modules/video-react/dist/video-react.css"; // import css
 import path from "../../../video/test.mp4";
-import image from "../../../image/cat.jpg";
+import image1 from "../../../image/test1.jpg";
+import image2 from "../../../image/test2.jpg";
+import image3 from "../../../image/test3.jpg";
+import image4 from "../../../image/test4.jpg";
+// const DataFormValue = [
+//   { formId: "0", value: "video" },
+//   { formId: "1", value: "photo" },
+//   { formId: "2", value: "text" },
+// ];
 
-
-const DataFormValue = [
-  { formId: "0", value: "video" },
-  { formId: "1", value: "photo" },
-  { formId: "2", value: "text" },
-];
 const typeSelect = [true, false, false];
 
 const MyModal = (props) => {
+  if (props.type === "video") {
+    typeSelect.forEach((item, index) => {
+      typeSelect[index] = false;
+    });
+    typeSelect[0] = true;
+  } else if (props.type === "photo") {
+    typeSelect.forEach((item, index) => {
+      typeSelect[index] = false;
+    });
+    typeSelect[1] = true;
+  } else if (props.type === "text") {
+    typeSelect.forEach((item, index) => {
+      typeSelect[index] = false;
+    });
+    typeSelect[2] = true;
+  }
   const [state, setState] = useState(typeSelect);
 
   const change = (index) => {
@@ -42,18 +60,18 @@ const MyModal = (props) => {
         visible={props.visible}
         onOk={props.onOk}
         onCancel={props.onCancel}
-        width={1000}
+        width={800}
       >
         <div className="dataForm">
-          <div style={{ display: "flex", justifyContent: "space-around" }}>
+          {/* <div style={{ display: "flex", justifyContent: "space-around" }}>
             {DataFormValue.map((item, index) => {
               return (
                 <Button onClick={() => change(index)}>{item.value}</Button>
               );
             })}
-          </div>
+          </div> */}
           {state[0] && (
-            <div style={{ marginTop: 50, marginLeft: 200 }}>
+            <div style={{ marginTop: 50, marginLeft: 120 }}>
               <Player fluid={false} width={500} height={300}>
                 <source src={path} type="video/mp4" />
                 <ControlBar autoHide={false} disableDefaultControls={false}>
@@ -72,8 +90,11 @@ const MyModal = (props) => {
             </div>
           )}
           {state[1] && (
-            <div style={{ marginTop: 50, marginLeft: 200 }}>
-              <img src={image} style={{ width: 500, height: 300 }} alt="img"></img>
+            <div className="image">
+              <img src={image1} alt="img" className="img"></img>
+              <img src={image2} className="img" alt="img"></img>
+              <img src={image3} className="img" alt="img"></img>
+              <img src={image4} className="img" alt="img"></img>
             </div>
           )}
           {state[2] && (
